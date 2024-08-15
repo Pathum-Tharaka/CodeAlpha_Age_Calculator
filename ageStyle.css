@@ -4,14 +4,18 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
-    background-image: url(');
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    background-image: url(agecalc.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .container {
     background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 50px;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -29,34 +33,117 @@ h1 {
 }
 
 label {
-    display: inline-block;
-    width: 50px;
-    color: #444;
+    justify-content: center; /* Center the group horizontally */
+    align-items: center; 
+    display: flex;
+    color: #000000;
 }
+
 
 input, select {
-    width: calc(100% - 60px);
+    justify-content: center; /* Center the group horizontally */
+    align-items: center; 
+    display: flex;
+    width: calc(100%);
     padding: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #62a6d6;
     border-radius: 3px;
 }
 
-button {
-    display: block;
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px;
-    margin-top: 10px;
-    cursor: pointer;
-    border-radius: 3px;
-    transition: background-color 0.3s;
+
+
+.button-29 {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
 }
 
-button:hover {
-    background-color: #45a049;
+.button-29:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
 }
+
+.button-29:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-29:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+
+/* CSS */
+.button-28 {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #ffaa5a 0, #dd0808 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-28:focus {
+  box-shadow: #6b0202 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #560505 0 -3px 0 inset;
+}
+
+.button-28:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #5d0707 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-28:active {
+  box-shadow: #5a0303 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
 
 #birthday-display, #result {
     text-align: center;
@@ -64,3 +151,4 @@ button:hover {
     font-weight: bold;
     color: #333;
 }
+

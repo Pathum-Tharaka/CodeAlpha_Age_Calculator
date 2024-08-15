@@ -78,3 +78,11 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('birth-year').setAttribute('max', currentYear);
     validateDate();
 });
+function clearFields() {
+    document.getElementById('birth-year').value = '';
+    document.getElementById('birth-month').value = '1'; // Set month to default value
+    document.getElementById('birth-day').value = '';
+
+    document.getElementById('birthday-display').textContent = '';
+    document.getElementById('result').textContent = '';
+}

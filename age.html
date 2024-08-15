@@ -10,12 +10,12 @@
     <div class="container">
         <h1>Age Calculator</h1>
         <div class="input-group">
-            <label for="birth-year">Year:</label>
+            <label for="birth-year">Year</label>
             <input type="number" id="birth-year" min="1900" max="2024">
-
         </div>
         <div class="input-group">
-            <label for="birth-month">Month:</label>
+            <label for="birth-month">Month</label>
+            
             <select id="birth-month" onchange="validateDate()">
                 <option value="1">January</option>
                 <option value="2">February</option>
@@ -36,7 +36,9 @@
             <input type="number" id="birth-day" min="1" max="31" oninput="validateDate()">
         </div>
         <p id="birthday-display"></p>
-        <button onclick="calculateAge()">Calculate Age</button>
+        <button class="button-29" role="button" onclick="calculateAge()">Calculate Age</button>
+        
+        <button class="button-28" role="button" onclick="clearFields()">Clear</button>
         <p id="result"></p>
     </div>
     <script src="ageJS.js"></script>
