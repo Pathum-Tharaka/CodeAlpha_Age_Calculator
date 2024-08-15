@@ -3,6 +3,10 @@
 
 This is a simple Age Calculator web application that allows users to calculate their age based on their date of birth. The application is built using HTML, CSS, and JavaScript.
 
+## Screenshot
+
+![Screenshot of Age Calculator](Screenshot.png)
+
 ## Features
 
 - **User-Friendly Interface**: The application provides an intuitive interface to input your birthdate.
